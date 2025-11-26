@@ -1,0 +1,10 @@
+/*C3*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C4*/SET SCHEMA PUBLIC
+alter table TuPrimeraEntidad add column cantidad integer
+alter table TuPrimeraEntidad add column nombre varchar(50)
+alter table TuPrimeraEntidad add column precio numeric(19,2)
+DELETE FROM TUPRIMERAENTIDAD WHERE ID='ff8081819abd75a0019abd763a650000'
+COMMIT
+INSERT INTO TUPRIMERAENTIDAD VALUES('ff8081819abd7efa019abd7fbc2c0000','Robo','2025-11-30',NULL,928,'iPhone',100.00)
+COMMIT
